@@ -68,7 +68,8 @@ def explore(chain_done, chain_todo, box, visited):
     return False
 
 def build_chain():
-    return [Cube90() if c == 'L' else Cube180() for c in 'LLLLL-L-LLLLLLLLLLL-L-LLLLL']
+    # return [Cube90() if c == 'L' else Cube180() for c in 'LLLLL-L-LLLLLLLLLLL-L-LLLLL']
+    return [Cube90() if c == 'L' else Cube180() for c in 'L-LLL-LL-LLL-L-LLLL-L-L-L-L']
 
 chain = build_chain()
 box = update_box((0,0,0,0,0,0), chain[0])
